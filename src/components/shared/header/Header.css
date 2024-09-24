@@ -7,13 +7,18 @@ header
     top: 0;
     left: 0;
     right: 0;
-    background-color: red;
     justify-content: space-between;
     padding: 60px 126px 0 100px;
 }
-header.scrolled
+header.desktop.scrolled
 {
-    background-color: blue;
+    background-color: var(--white--clr);
+    padding: 10px 126px 0 100px;
+}
+header.mobile.scrolled
+{
+    padding-top: 10px;
+    background-color: var(--white--clr);
 }
 header a
 {
@@ -80,7 +85,7 @@ header.mobile .bar-container
 {
     width: 35px;
     height: 3px;
-    background-color: var(--white--clr);
+    background-color: var(--dark-blue--clr);
     margin: 6px 0;
     border-radius: 40px;
     transition: 0.4s;
@@ -111,6 +116,7 @@ header.mobile nav.open
     position: absolute;
     top: 150px;
     gap: 20px;
+    background-color: var(--white--clr);
     left: 0;
     right: 0;
     padding: 20px 0;
@@ -164,5 +170,5 @@ header.mobile nav.closed
 }
 p
 {
-    font-size: 50px;
+    font-size: 80px;
 }

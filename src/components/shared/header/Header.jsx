@@ -37,7 +37,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="desktop">
+      <header className={`desktop ${isScrolled ? "scrolled" : ""}`}>
         <h1 className="pointer">
           <img src={logo} alt="Skilline" />
         </h1>
