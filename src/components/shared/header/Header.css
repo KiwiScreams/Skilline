@@ -59,7 +59,6 @@ header .signup:hover
 header.mobile
 {
     display: none;
-    background-color: red;
 }
 header.mobile .bar-container
 {
@@ -93,6 +92,10 @@ header.mobile .bar-container
 .change .bar3
 {
     transform: rotate(-45deg);
+}
+header.mobile .btn-container
+{
+    flex-direction: column;
 }
 header.mobile nav.open
 {
@@ -134,5 +137,6 @@ header.mobile nav.closed
     header.mobile
     {
         display: flex;
+        padding: 60px 8px 0 8px;
     }
 }
