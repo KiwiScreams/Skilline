@@ -3,6 +3,10 @@ import logo from "../../../assets/images/dark logo.svg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <header className="desktop">
@@ -38,7 +42,10 @@ const Header = () => {
             </button>
           </div>
         </nav>
-        <div className="bar-container">
+        <div
+          className={`bar-container ${isMenuOpen ? "change" : ""}`}
+          onClick={handleMenuToggle}
+        >
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
