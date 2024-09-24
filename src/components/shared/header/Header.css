@@ -56,6 +56,11 @@ header .signup:hover
     background-color: transparent;
     color: var(--orange--clr);
 }
+header.mobile
+{
+    display: none;
+    background-color: red;
+}
 @media screen and (max-width: 1360px)
 {
     header
@@ -72,8 +77,12 @@ header .signup:hover
 }
 @media screen and (max-width: 950px)
 {
-    header .btn-container
+    header.desktop
     {
-        gap: 14px;
+        display: none;
+    }
+    header.mobile
+    {
+        display: flex;
     }
 }
