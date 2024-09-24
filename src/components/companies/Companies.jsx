@@ -11,12 +11,12 @@ const Companies = () => {
       <section className="companies-section">
         <p>Trusted by 5,000+ Companies Worldwide</p>
         <div className="companies">
-            <img src={google} alt="" />
-            <img src={netflix} alt="" />
-            <img src={airbnb} alt="" />
-            <img src={amazon} alt="" />
-            <img src={facebook} alt="" />
-            <img src={grab} alt="" />
+            <img src={google} alt="Google logo" />
+            <img src={netflix} alt="Netflix logo" />
+            <img src={airbnb} alt="Airbnb logo" />
+            <img src={amazon} alt="Amazon logo" />
+            <img src={facebook} alt="Facebook logo" />
+            <img src={grab} alt="Grab logo" />
         </div>
       </section>
     </>
