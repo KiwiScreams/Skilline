@@ -1,0 +1,133 @@
+footer
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--dark-text--clr);
+    padding: 74px 0 40px 0;
+}
+footer .footer-top-container
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 95px;
+}
+footer .footer-top-container .line
+{
+    width: 1px;
+    height: 83px;
+    background-color: #626381;
+}
+footer .footer-top-container h4
+{
+    color: var(--white--clr);
+    font-size: var(--font-size-22px);
+}
+footer .footer-middle-container
+{
+    margin-bottom: 95px;
+}
+footer .footer-middle-container h4
+{
+    color: var(--light-gray--clr);
+    font-size: var(--font-size-26px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer .input-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    gap: 20px;
+    position: relative;
+}
+footer .input-container input
+{
+    width: 400px;
+    height: 60px;
+    border: 1px solid var(--light-gray--clr);
+    font-size: var(--font-size-20px);
+    border-radius: 60px;
+    background-color: transparent;
+    padding-left: 30px;
+    color: var(--light-gray--clr);
+    font-size: var(--font-size-20px);
+}
+footer .input-container input:focus
+{
+    border: 1px solid var(--white--clr);
+}
+footer .input-container button
+{
+    color: var(--white--clr);
+    background: linear-gradient(to right, #545AE7, #393FCF);
+    font-size: var(--font-size-22px);
+    border-radius: 60px;
+    width: 180px;
+    height: 60px;
+    border: 3px solid #393FCF;
+}
+footer .input-container button:hover
+{
+    background: transparent;
+}
+.error-msg
+{
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    color: var(--white--clr);
+}
+footer .footer-bottom-container .footer-bottom
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--light-gray--clr);
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+footer .footer-bottom-container p
+{
+    font-size: var(--font-size-22px);
+    color: var(--light-gray--clr);
+    text-align: center;
+}
+footer .footer-bottom-container .line
+{
+    height: 17px;
+    width: 1px;
+    background-color: #626381;
+}
+@media screen and (max-width: 630px)
+{
+    footer .input-container
+    {
+        flex-direction: column;
+    }
+    footer .input-container button
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 490px)
+{
+    footer .footer-bottom-container .footer-bottom
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 430px)
+{
+    footer .input-container input
+    {
+        width: 100%;
+    }
+}
