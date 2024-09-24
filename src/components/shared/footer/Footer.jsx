@@ -32,6 +32,22 @@ const Footer = () => {
     navigate("/");
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  const footerTopItems = [
+    {
+      src: logo,
+      alt: "Skilline",
+      onClick: handleNavigateToHomePage,
+      className: "pointer"
+    },
+    {
+      element: <div className="line" />
+    },
+    {
+      text: "Virtual Class\nfor Zoom",
+      element: <h4 />
+    }
+  ];
+
   return (
     <>
       <footer>
