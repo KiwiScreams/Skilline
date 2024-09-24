@@ -1,6 +1,6 @@
 import "./Footer.css";
 import logo from "../../../assets/images/logofooter.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRef } from "react";
 const Footer = () => {
   const [email, setEmail] = useState("");
