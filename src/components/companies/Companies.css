@@ -19,3 +19,29 @@
     margin: auto;
     align-items: center;
 }
+@media screen and (max-width: 1370px)
+{
+    .companies-section .companies
+    {
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 1060px)
+{
+    .companies-section .companies
+    {
+        gap: 2px;
+    }
+}
+@media screen and (max-width: 990px)
+{
+    .companies-section .companies
+    {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .companies-section .companies img
+    {
+        margin: auto;
+    }
+}
