@@ -38,8 +38,14 @@ const Header = () => {
   };
   const handleNavigateToHomePage = () => {
     navigate("/");
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const navItems = [
+    { label: "Home", to: "/" },
+    { label: "Careers", to: "/" },
+    { label: "Blog", to: "/" },
+    { label: "About Us", to: "/" },
+  ];
   return (
     <>
       <header className={`desktop ${isScrolled ? "scrolled" : ""}`}>

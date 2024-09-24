@@ -19,7 +19,11 @@ const Companies = () => {
       <section className="companies-section">
         <p>Trusted by 5,000+ Companies Worldwide</p>
         <div className="companies">
-
+          {companies.map((company, index) => (
+            <img key={index} src={company.src} alt={company.alt} />
+          ))}
+        </div>
+      </section>
     </>
   );
 };
