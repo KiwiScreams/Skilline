@@ -1,25 +1,46 @@
 .layout-section
 {
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    overflow: hidden;
     padding: 224px 126px 0 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background-color: #FFF2E1;
 }
 .layout-section .image-container
 {
     width: 50%;
+    position: relative;
 }
 .layout-section .image-container img.girl
 {
     width: 100%;
-    position: relative;
 }
 .layout-section .image-container img.img
 {
     position: absolute;
+}
+.layout-section .image-container img.img0
+{
+    left: -50px;
+    top: 186px;
+}
+.layout-section .image-container img.img1
+{
+    right: 0px;
+    top: 110px;
+}
+.layout-section .image-container img.img2
+{
+    right: -100px;
+    top: 380px;
+}
+.layout-section .image-container img.img3
+{
+    left: -50px;
+    bottom: 180px;
 }
 .layout-section h2
 {
@@ -78,4 +99,11 @@
     font-size: var(--font-size-24px);
     width: 70%;
     color: var(--dark-gray--clr);
+}
+.layout-section svg
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
