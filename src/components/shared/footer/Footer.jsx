@@ -30,6 +30,7 @@ const Footer = () => {
   const navigate = useNavigate();
   const handleNavigateToHomePage = () => {
     navigate("/");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
