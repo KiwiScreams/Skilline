@@ -20,4 +20,18 @@
   --dark-text--clr: #252641;
   --gray--clr: #6C6C6C;
   --light-gray--clr: #B2B3CF;
+  /* FONT SIZE */
+  --font-size-18px: 18px;
+  --font-size-20px: 20px;
+  --font-size-22px: 22px;
+  --font-size-24px: 24px;
+  --font-size-26px: 26px;
+  --font-size-28px: 28px;
+  --font-size-30px: 30px;
+  --font-size-32px: 32px;
+  --font-size-36px: 36px;
+  --font-size-40px: 40px;
+  --font-size-44px: 44px;
+  --font-size-54px: 54px;
+  --font-size-60px: 60px;
 }
