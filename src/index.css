@@ -63,3 +63,11 @@ button, a, .pointer
 {
   background-color: var(--white--clr);
 }
+.orange-txt
+{
+  color: var(--orange--clr);
+}
+.blue-txt
+{
+  color: var(--dark-blue--clr);
+}
