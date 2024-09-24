@@ -14,7 +14,7 @@ header
 header.desktop.scrolled
 {
     background-color: var(--white--clr);
-    padding: 10px 126px 0 100px;
+    padding-top: 10px;
 }
 header.mobile.scrolled
 {
@@ -157,7 +157,7 @@ header.mobile nav.closed
         gap: 15px;
     }
 }
-@media screen and (max-width: 950px)
+@media screen and (max-width: 970px)
 {
     header.desktop
     {
