@@ -71,7 +71,31 @@ const Footer = () => {
       )
     }
   ];
-
+  
+  const footerBottomItems = [
+    {
+      text: "Careers",
+      element: <p />
+    },
+    {
+      element: <div className="line" />
+    },
+    {
+      text: "Privacy Policy",
+      element: <p />
+    },
+    {
+      element: <div className="line" />
+    },
+    {
+      text: "Terms & Conditions",
+      element: <p />
+    },
+    {
+      text: "© 2024 Class Technologies Inc.",
+      element: <p />
+    }
+  ];
   return (
     <>
       <footer>
