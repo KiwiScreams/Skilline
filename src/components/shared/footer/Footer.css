@@ -1,0 +1,26 @@
+footer
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--dark-text--clr);
+}
+footer .footer-top-container
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    width: fit-content;
+}
+footer .line
+{
+    width: 1px;
+    height: 83px;
+    background-color: #626381;
+}
+footer h4
+{
+    color: var(--white--clr);
+    font-size: var(--font-size-22px);
+}
