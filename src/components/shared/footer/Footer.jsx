@@ -78,10 +78,6 @@ const Footer = () => {
     { text: "Privacy Policy", element: <p>Privacy Policy</p> },
     { element: <div className="line" /> },
     { text: "Terms & Conditions", element: <p>Terms & Conditions</p> },
-    {
-      text: "© 2024 Class Technologies Inc.",
-      element: <p>© 2024 Class Technologies Inc.</p>,
-    },
   ];
   return (
     <>
@@ -111,10 +107,9 @@ const Footer = () => {
         </div>
         <div className="footer-bottom-container">
           <div className="footer-bottom">
-            {footerBottomItems.map((item, index) =>
-              item.element ? item.element : <p key={index}>{item.text}</p>
-            )}
+            {footerBottomItems.map((item, index) => item.element)}
           </div>
+          <p>© 2024 Class Technologies Inc.</p>,
         </div>
       </footer>
     </>
