@@ -47,6 +47,30 @@ const Footer = () => {
       element: <h4 />
     }
   ];
+  
+  const footerMiddleItems = [
+    {
+      text: "Subscribe to get our Newsletter",
+      element: <h4 />
+    },
+    {
+      element: (
+        <div className="input-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={handleEmailChange}
+            ref={emailInputRef}
+          />
+          {emailError && <div className="error-msg">{emailError}</div>}
+          <button onClick={handleSubscribe}>Subscribe</button>
+        </div>
+      )
+    }
+  ];
 
   return (
     <>
