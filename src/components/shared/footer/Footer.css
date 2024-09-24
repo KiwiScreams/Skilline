@@ -15,7 +15,7 @@ footer .footer-top-container
     width: fit-content;
     margin-bottom: 95px;
 }
-footer .line
+footer .footer-top-container .line
 {
     width: 1px;
     height: 83px;
@@ -83,4 +83,26 @@ footer .input-container button:hover
     bottom: -20px;
     left: 30px;
     color: var(--white--clr);
+}
+footer .footer-bottom-container .footer-bottom
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--light-gray--clr);
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+footer .footer-bottom-container p
+{
+    font-size: var(--font-size-22px);
+    color: var(--light-gray--clr);
+    text-align: center;
+}
+footer .footer-bottom-container .line
+{
+    height: 17px;
+    width: 1px;
+    background-color: #626381;
 }

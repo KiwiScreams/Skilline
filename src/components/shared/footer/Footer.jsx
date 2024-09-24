@@ -53,6 +53,16 @@ const Footer = () => {
             <button onClick={handleSubscribe}>Subscribe</button>
           </div>
         </div>
+        <div className="footer-bottom-container">
+          <div className="footer-bottom">
+            <p>Careers</p>
+            <div className="line"></div>
+            <p>Privacy Policy</p>
+            <div className="line"></div>
+            <p>Terms & Conditions</p>
+          </div>
+          <p>© 2024 Class Technologies Inc. </p>
+        </div>
       </footer>
     </>
   );
