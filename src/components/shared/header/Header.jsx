@@ -1,7 +1,11 @@
 import "./Header.css";
 const Header = () => {
     return ( 
-        <>head</>
+        <>
+        <header>
+            
+        </header>
+        </>
      );
 }
  
