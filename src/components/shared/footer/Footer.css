@@ -4,6 +4,7 @@ footer
     position: absolute;
     bottom: 0;
     background-color: var(--dark-text--clr);
+    padding: 74px 0 40px 0;
 }
 footer .footer-top-container
 {
@@ -12,6 +13,7 @@ footer .footer-top-container
     gap: 40px;
     margin: auto;
     width: fit-content;
+    margin-bottom: 95px;
 }
 footer .line
 {
@@ -19,7 +21,7 @@ footer .line
     height: 83px;
     background-color: #626381;
 }
-footer h4
+footer .footer-top-container h4
 {
     color: var(--white--clr);
     font-size: var(--font-size-22px);

@@ -12,7 +12,12 @@ const Footer = () => {
             <br /> for Zoom
           </h4>
         </div>
-        jkljkl
+        <div className="footer-middle-container">
+          <h4>Subscribe to get our Newsletter</h4>
+          <div className="input-container">
+            <input type="email" name="email" id="email" />
+          </div>
+        </div>
       </footer>
     </>
   );
