@@ -73,59 +73,47 @@ const Footer = () => {
   ];
 
   const footerBottomItems = [
-    {
-      text: "Careers",
-      element: <p />,
-    },
-    {
-      element: <div className="line" />,
-    },
-    {
-      text: "Privacy Policy",
-      element: <p />,
-    },
-    {
-      element: <div className="line" />,
-    },
-    {
-      text: "Terms & Conditions",
-      element: <p />,
-    },
+    { text: "Careers", element: <p>Careers</p> },
+    { element: <div className="line" /> },
+    { text: "Privacy Policy", element: <p>Privacy Policy</p> },
+    { element: <div className="line" /> },
+    { text: "Terms & Conditions", element: <p>Terms & Conditions</p> },
     {
       text: "© 2024 Class Technologies Inc.",
-      element: <p />,
+      element: <p>© 2024 Class Technologies Inc.</p>,
     },
   ];
   return (
     <>
       <footer>
         <div className="footer-top-container">
-          {footerTopItems.map((item, index) => (
-            <>
-              {item.element ? (
-                item.element
-              ) : (
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  onClick={item.onClick}
-                  className={item.className}
-                />
-              )}
-              {item.text && <h4>{item.text}</h4>}
-            </>
-          ))}
+          {footerTopItems.map((item, index) =>
+            item.element ? (
+              item.element
+            ) : (
+              <img
+                src={item.src}
+                alt={item.alt}
+                onClick={item.onClick}
+                className={item.className}
+                key={index}
+              />
+            )
+          )}
+          {footerTopItems.map(
+            (item, index) => item.text && <h4 key={index}>{item.text}</h4>
+          )}
         </div>
         <div className="footer-middle-container">
-          {footerMiddleItems.map((item, index) => (
-            <>{item.element ? item.element : <h4>{item.text}</h4>}</>
-          ))}
+          {footerMiddleItems.map((item, index) =>
+            item.element ? item.element : <h4 key={index}>{item.text}</h4>
+          )}
         </div>
         <div className="footer-bottom-container">
           <div className="footer-bottom">
-            {footerBottomItems.map((item, index) => (
-              <>{item.element ? item.element : <p>{item.text}</p>}</>
-            ))}
+            {footerBottomItems.map((item, index) =>
+              item.element ? item.element : <p key={index}>{item.text}</p>
+            )}
           </div>
         </div>
       </footer>
