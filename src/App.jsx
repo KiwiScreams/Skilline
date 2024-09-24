@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/shared/header/Header";
 import Home from "./pages/home/Home";
 import Footer from "./components/shared/footer/Footer";
+import NotFound from "./components/not found/NotFound";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </>
