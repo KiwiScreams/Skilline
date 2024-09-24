@@ -2,11 +2,25 @@ import "./Header.css";
 import logo from "../../../assets/images/dark logo.svg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useRef } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const mobileNavRef = useRef(null);
+  const headerRef = useRef(null);
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const handleOutsideClick = (event) => {
+    if (isMenuOpen && !headerRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isMenuOpen]);
   return (
     <>
       <header className="desktop">
@@ -26,11 +40,11 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <header className="mobile">
+      <header className="mobile" ref={headerRef}>
         <h1 className="pointer">
           <img src={logo} alt="Skilline" />
         </h1>
-        <nav className={`${isMenuOpen ? "open" : "closed"}`}>
+        <nav ref={mobileNavRef} className={`${isMenuOpen ? "open" : "closed"}`}>
           <Link to="/">Home</Link>
           <Link to="/">Careers</Link>
           <Link to="/">Blog</Link>
