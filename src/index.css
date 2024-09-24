@@ -19,6 +19,7 @@
   --blue--clr: #65DAFF;
   --dark-text--clr: #252641;
   --gray--clr: #6C6C6C;
+  --dark-gray--clr: #464646;
   --light-gray--clr: #B2B3CF;
   /* FONT SIZE */
   --font-size-18px: 18px;
@@ -62,4 +63,12 @@ button, a, .pointer
 ::-webkit-scrollbar-track
 {
   background-color: var(--white--clr);
+}
+.orange-txt
+{
+  color: var(--orange--clr);
+}
+.blue-txt
+{
+  color: var(--dark-blue--clr);
 }

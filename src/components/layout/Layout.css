@@ -1,0 +1,109 @@
+.layout-section
+{
+    width: 100%;
+    overflow: hidden;
+    padding: 224px 126px 0 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #FFF2E1;
+}
+.layout-section .image-container
+{
+    width: 50%;
+    position: relative;
+}
+.layout-section .image-container img.girl
+{
+    width: 100%;
+}
+.layout-section .image-container img.img
+{
+    position: absolute;
+}
+.layout-section .image-container img.img0
+{
+    left: -50px;
+    top: 186px;
+}
+.layout-section .image-container img.img1
+{
+    right: 0px;
+    top: 110px;
+}
+.layout-section .image-container img.img2
+{
+    right: -100px;
+    top: 380px;
+}
+.layout-section .image-container img.img3
+{
+    left: -50px;
+    bottom: 180px;
+}
+.layout-section h2
+{
+    font-size: var(--font-size-54px);
+    font-weight: bold;
+}
+.layout-section .text-container
+{
+    width: 50%;
+}
+.layout-section .text-container button.join
+{
+    width: 220px;
+    height: 80px;
+    color: var(--white--clr);
+    border-radius: 80px;
+    font-size: var(--font-size-24px);
+    background-color: var(--orange--clr);
+    border: 3px solid var(--orange--clr);
+}
+.layout-section .text-container button.join:hover
+{
+    background-color: transparent;
+}
+.layout-section .btn-container
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.layout-section .text-container button.pause img
+{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.layout-section .text-container button.pause
+{
+    width: 450px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    color: var(--dark-text--clr);
+    border-radius: 80px;
+    font-size: var(--font-size-24px);
+    background-color: transparent;
+}
+.layout-section .text-container button.pause:hover
+{
+    opacity: 0.8;
+}
+.layout-section .text-container p
+{
+    margin-top: 34px;
+    margin-bottom: 52px;
+    font-size: var(--font-size-24px);
+    width: 70%;
+    color: var(--dark-gray--clr);
+}
+.layout-section svg
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

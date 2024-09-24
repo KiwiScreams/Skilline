@@ -9,6 +9,7 @@ header
     right: 0;
     justify-content: space-between;
     padding: 60px 126px 0 100px;
+    z-index: 10;
 }
 header.desktop.scrolled
 {

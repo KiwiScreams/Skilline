@@ -1,8 +1,6 @@
 footer
 {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     background-color: var(--dark-text--clr);
     padding: 74px 0 40px 0;
 }
