@@ -30,86 +30,45 @@ const Footer = () => {
   const navigate = useNavigate();
   const handleNavigateToHomePage = () => {
     navigate("/");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  const footerTopItems = [
-    {
-      src: logo,
-      alt: "Skilline",
-      onClick: handleNavigateToHomePage,
-      className: "pointer",
-    },
-    {
-      element: <div className="line" />,
-    },
-    {
-      text: "Virtual Class\nfor Zoom",
-      element: <h4 />,
-    },
-  ];
-
-  const footerMiddleItems = [
-    {
-      text: "Subscribe to get our Newsletter",
-      element: <h4 />,
-    },
-    {
-      element: (
-        <div className="input-container">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Your Email"
-            value={email}
-            onChange={handleEmailChange}
-            ref={emailInputRef}
-          />
-          {emailError && <div className="error-msg">{emailError}</div>}
-          <button onClick={handleSubscribe}>Subscribe</button>
-        </div>
-      ),
-    },
-  ];
-
-  const footerBottomItems = [
-    { text: "Careers", element: <p>Careers</p> },
-    { element: <div className="line" /> },
-    { text: "Privacy Policy", element: <p>Privacy Policy</p> },
-    { element: <div className="line" /> },
-    { text: "Terms & Conditions", element: <p>Terms & Conditions</p> },
-  ];
+  
   return (
     <>
       <footer>
         <div className="footer-top-container">
-          {footerTopItems.map((item, index) =>
-            item.element ? (
-              item.element
-            ) : (
-              <img
-                src={item.src}
-                alt={item.alt}
-                onClick={item.onClick}
-                className={item.className}
-                key={index}
-              />
-            )
-          )}
-          {footerTopItems.map(
-            (item, index) => item.text && <h4 key={index}>{item.text}</h4>
-          )}
+          <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} className="pointer"/>
+          <div className="line"></div>
+          <h4>
+            Virtual Class
+            <br /> for Zoom
+          </h4>
         </div>
         <div className="footer-middle-container">
-          {footerMiddleItems.map((item, index) =>
-            item.element ? item.element : <h4 key={index}>{item.text}</h4>
-          )}
+          <h4>Subscribe to get our Newsletter</h4>
+          <div className="input-container">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={handleEmailChange}
+              ref={emailInputRef}
+            />
+            {emailError && <div className="error-msg">{emailError}</div>}
+            <button onClick={handleSubscribe}>Subscribe</button>
+          </div>
         </div>
         <div className="footer-bottom-container">
           <div className="footer-bottom">
-            {footerBottomItems.map((item, index) => item.element)}
+            <p>Careers</p>
+            <div className="line"></div>
+            <p>Privacy Policy</p>
+            <div className="line"></div>
+            <p>Terms & Conditions</p>
           </div>
-          <p>© 2024 Class Technologies Inc.</p>,
+          <p>© 2024 Class Technologies Inc. </p>
         </div>
       </footer>
     </>
