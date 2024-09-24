@@ -1,9 +1,11 @@
 import "./Footer.css";
 import logo from "../../../assets/images/logofooter.svg";
 import { useState, useEffect } from "react";
+import { useRef } from "react";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState(null);
+  const emailInputRef = useRef(null);
   const handleEmailChange = (e) => {
     const emailValue = e.target.value;
     setEmail(emailValue);
@@ -17,6 +19,7 @@ const Footer = () => {
   const handleSubscribe = () => {
     if (!emailError && email) {
       console.log("Subscribed successfully!");
+      emailInputRef.current.value = "";
     }
   };
   return (
@@ -40,6 +43,7 @@ const Footer = () => {
               placeholder="Your Email"
               value={email}
               onChange={handleEmailChange}
+              ref={emailInputRef}
             />
             {emailError && <div style={{ color: "red" }}>{emailError}</div>}
             <button onClick={handleSubscribe}>Subscribe</button>
