@@ -18,7 +18,6 @@ const Footer = () => {
   };
   const handleSubscribe = () => {
     if (!emailError && email) {
-      console.log("Subscribed successfully!");
       setTimeout(() => {
         emailInputRef.current.value = "Success";
         setTimeout(() => {
