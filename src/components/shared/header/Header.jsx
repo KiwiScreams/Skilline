@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <h1>
+        <h1 className="pointer">
           <img src={logo} alt="Skilline" />
         </h1>
         <nav>

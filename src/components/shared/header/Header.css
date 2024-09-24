@@ -10,11 +10,16 @@ header a
 {
     color: var(--dark-text--clr);
     font-size: var(--font-size-22px);
+    padding: 5px 10px;
+}
+header a:hover
+{
+    color: var(--gray--clr);
 }
 header nav
 {
     display: flex;
-    gap: 80px;
+    gap: 70px;
     align-items: center;
 }
 header .btn-container
@@ -33,9 +38,21 @@ header .login
 {
     background-color: var(--white--clr);
     color: var(--gray--clr);
+    border: 3px solid var(--white--clr);
 }
 header .signup
 {
     background-color: var(--orange--clr);
     color: var(--white--clr);
+    border: 3px solid var(--orange--clr);
+}
+header .login:hover
+{
+    background-color: transparent;
+    color: var(--dark-text--clr);
+}
+header .signup:hover
+{
+    background-color: transparent;
+    color: var(--orange--clr);
 }
