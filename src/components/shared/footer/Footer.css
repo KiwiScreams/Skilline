@@ -45,6 +45,7 @@ footer .input-container
     width: fit-content;
     margin: auto;
     gap: 20px;
+    position: relative;
 }
 footer .input-container input
 {
@@ -75,4 +76,11 @@ footer .input-container button
 footer .input-container button:hover
 {
     background: transparent;
+}
+.error-msg
+{
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    color: var(--white--clr);
 }

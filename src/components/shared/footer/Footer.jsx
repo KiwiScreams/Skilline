@@ -50,7 +50,7 @@ const Footer = () => {
               onChange={handleEmailChange}
               ref={emailInputRef}
             />
-            {emailError && <div style={{ color: "red" }}>{emailError}</div>}
+            {emailError && <div className="error-msg">{emailError}</div>}
             <button onClick={handleSubscribe}>Subscribe</button>
           </div>
         </div>
