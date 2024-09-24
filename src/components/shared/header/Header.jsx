@@ -30,7 +30,7 @@ const Header = () => {
   }, [isMenuOpen]);
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    if (scrollPosition > 200) {
+    if (scrollPosition > 80) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);

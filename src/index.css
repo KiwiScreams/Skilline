@@ -11,7 +11,6 @@
 }
 :root
 {
-  /* COLOUR */
   --white--clr: #fff;
   --black--clr: #000;
   --dark-blue--clr: #2F327D;
@@ -21,7 +20,6 @@
   --gray--clr: #6C6C6C;
   --dark-gray--clr: #464646;
   --light-gray--clr: #B2B3CF;
-  /* FONT SIZE */
   --font-size-18px: 18px;
   --font-size-20px: 20px;
   --font-size-22px: 22px;
@@ -35,7 +33,6 @@
   --font-size-44px: 44px;
   --font-size-54px: 54px;
   --font-size-60px: 60px;
-  /* FONT WEIGHT */
   --font-weight-bold: bold;
   --font-weight-light: light;
   --font-weight-300: 300;

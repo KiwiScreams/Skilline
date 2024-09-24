@@ -5,6 +5,7 @@ const NotFound = () => {
   const navigate = useNavigate();
   const handleNavigateToHome = () => {
     navigate("/");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
