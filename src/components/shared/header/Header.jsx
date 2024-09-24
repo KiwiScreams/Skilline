@@ -38,7 +38,7 @@ const Header = () => {
   };
   const handleNavigateToHomePage = () => {
     navigate("/");
-    console.log("lo");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
