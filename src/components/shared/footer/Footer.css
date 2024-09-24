@@ -106,3 +106,28 @@ footer .footer-bottom-container .line
     width: 1px;
     background-color: #626381;
 }
+@media screen and (max-width: 630px)
+{
+    footer .input-container
+    {
+        flex-direction: column;
+    }
+    footer .input-container button
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 490px)
+{
+    footer .footer-bottom-container .footer-bottom
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 430px)
+{
+    footer .input-container input
+    {
+        width: 100%;
+    }
+}
