@@ -1,6 +1,6 @@
 import "./Header.css";
 import logo from "../../../assets/images/dark logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 const Header = () => {
@@ -35,10 +35,14 @@ const Header = () => {
       setIsScrolled(false);
     }
   };
+  const navigate = useNavigate();
+  const handleNavigateToHomePage = () => {
+    navigate("/");
+  };
   return (
     <>
       <header className={`desktop ${isScrolled ? "scrolled" : ""}`}>
-        <h1 className="pointer">
+        <h1 className="pointer" onClick={handleNavigateToHomePage}>
           <img src={logo} alt="Skilline" />
         </h1>
         <nav>

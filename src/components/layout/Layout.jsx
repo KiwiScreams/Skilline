@@ -24,22 +24,22 @@ const Layout = () => {
           <div className="btn-container">
             <button className="join">Join for free</button>
             <button className="pause">
-              <img src={pauseImage} alt="" />
+              <img src={pauseImage} alt="Skilline" />
               Watch how it works
             </button>
           </div>
         </div>
         <div className="image-container">
-          <img src={girlImage} alt="" className="girl" />
-          <img src={img1} alt="" className="img img0" />
-          <img src={img2} alt="" className="img img1" />
-          <img src={img3} alt="" className="img img2" />
-          <img src={img4} alt="" className="img img3" />
+          <img src={girlImage} alt="Skilline" className="girl" />
+          <img src={img1} alt="Skilline" className="img img0" />
+          <img src={img2} alt="Skilline" className="img img1" />
+          <img src={img3} alt="Skilline" className="img img2" />
+          <img src={img4} alt="Skilline" className="img img3" />
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,224L80,234.7C160,245,320,267,480,277.3C640,288,800,288,960,266.7C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>

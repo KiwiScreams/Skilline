@@ -1,7 +1,8 @@
 import "./Footer.css";
 import logo from "../../../assets/images/logofooter.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState(null);
@@ -26,11 +27,15 @@ const Footer = () => {
       }, 50);
     }
   };
+  const navigate = useNavigate();
+  const handleNavigateToHomePage = () => {
+    navigate("/");
+  };
   return (
     <>
       <footer>
         <div className="footer-top-container">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} className="pointer"/>
           <div className="line"></div>
           <h4>
             Virtual Class
