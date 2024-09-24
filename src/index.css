@@ -9,3 +9,15 @@
   border: none;
   outline: none;
 }
+:root
+{
+  /* COLOUR */
+  --white--clr: #fff;
+  --black--clr: #000;
+  --dark-blue--clr: #2F327D;
+  --orange--clr: #F48C06;
+  --blue--clr: #65DAFF;
+  --dark-text--clr: #252641;
+  --gray--clr: #6C6C6C;
+  --light-gray--clr: #B2B3CF;
+}
