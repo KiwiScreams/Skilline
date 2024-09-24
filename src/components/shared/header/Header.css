@@ -121,7 +121,7 @@ header.mobile nav.open
   left: 0;
   right: 0;
   padding: 20px 0;
-  box-shadow: 0 0 10px #00000075;
+  box-shadow: 0 0 10px var(--shadow--clr);
   text-align: center;
   flex-direction: column;
   animation: navOpen 0.8s ease-in-out;
@@ -135,7 +135,7 @@ header.mobile nav.closed
   left: 0;
   right: 0;
   padding: 20px 0;
-  box-shadow: 0 0 10px #00000075;
+  box-shadow: 0 0 10px var(--shadow--clr);
   text-align: center;
   flex-direction: column;
   visibility: hidden;
