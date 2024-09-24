@@ -53,15 +53,14 @@ const Header = () => {
           <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} />
         </h1>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/">Careers</Link>
-          <Link to="/">Blog</Link>
-          <Link to="/">About Us</Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to}>
+              {item.label}
+            </Link>
+          ))}
           <div className="btn-container">
             <button className="login btn">Login</button>
-            <button to="/" className="signup btn">
-              Sign Us
-            </button>
+            <button className="signup btn">Sign Up</button>
           </div>
         </nav>
       </header>
