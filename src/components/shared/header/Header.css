@@ -1,0 +1,41 @@
+header
+{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 126px 0 100px;
+}
+header a
+{
+    color: var(--dark-text--clr);
+    font-size: var(--font-size-22px);
+}
+header nav
+{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+header .btn-container
+{
+    display: flex;
+    gap: 34px;
+}
+header .btn
+{
+    border-radius: 80px;
+    width: 160px;
+    height: 60px;
+    font-size: var(--font-size-22px);
+}
+header .login
+{
+    background-color: var(--white--clr);
+    color: var(--gray--clr);
+}
+header .signup
+{
+    background-color: var(--orange--clr);
+    color: var(--white--clr);
+}
