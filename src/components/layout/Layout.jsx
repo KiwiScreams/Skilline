@@ -11,15 +11,30 @@ const Layout = () => {
       <section className="layout-section">
         <div className="text-container">
           <h2>
-            <span className="orange-txt">Studying</span>
-            <span className="blue-txt">Online is now much easier</span>
+            <span className="orange-txt">Studying </span>
+            <span className="blue-txt">
+              Online is now
+              <br /> much easier
+            </span>
           </h2>
           <p>
             Skilline is an interesting platform that will teach you in more an
             interactive way
           </p>
-          <button>Join for free</button>
-          <button><img src={pauseImage} alt="" /></button>
+          <div className="btn-container">
+            <button className="join">Join for free</button>
+            <button className="pause">
+              <img src={pauseImage} alt="" />
+              Watch how it works
+            </button>
+          </div>
+        </div>
+        <div className="image-container">
+          <img src={girlImage} alt="" className="girl" />
+          <img src={img1} alt="" className="img" />
+          <img src={img2} alt="" className="img" />
+          <img src={img3} alt="" className="img" />
+          <img src={img4} alt="" className="img" />
         </div>
       </section>
     </>
