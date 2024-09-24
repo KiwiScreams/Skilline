@@ -19,7 +19,12 @@ const Footer = () => {
   const handleSubscribe = () => {
     if (!emailError && email) {
       console.log("Subscribed successfully!");
-      emailInputRef.current.value = "";
+      setTimeout(() => {
+        emailInputRef.current.value = "Success";
+        setTimeout(() => {
+          emailInputRef.current.value = "";
+        }, 2000);
+      }, 50);
     }
   };
   return (
