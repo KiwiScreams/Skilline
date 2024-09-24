@@ -94,6 +94,23 @@ header.mobile .bar-container
 {
     transform: rotate(-45deg);
 }
+header.mobile nav.open
+{
+    position: absolute;
+    top: 150px;
+    gap: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    box-shadow: 0 0 10px #00000075;
+    text-align: center;
+    flex-direction: column;
+    animation: navOpen 1s ease-in-out;
+}
+header.mobile nav.closed
+{
+    display: none;
+}
 @media screen and (max-width: 1360px)
 {
     header

@@ -30,7 +30,7 @@ const Header = () => {
         <h1 className="pointer">
           <img src={logo} alt="Skilline" />
         </h1>
-        <nav>
+        <nav className={`${isMenuOpen ? "open" : "closed"}`}>
           <Link to="/">Home</Link>
           <Link to="/">Careers</Link>
           <Link to="/">Blog</Link>
