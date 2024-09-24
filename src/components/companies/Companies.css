@@ -1,0 +1,21 @@
+.companies-section
+{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 160px;
+}
+.companies-section p
+{
+    color: #696984;
+    font-size: var(--font-size-28px);
+    margin-bottom: 32px;
+    text-align: center;
+}
+.companies-section .companies
+{
+    display: flex;
+    gap: 76px;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+}
