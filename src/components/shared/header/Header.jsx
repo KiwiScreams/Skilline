@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useRef } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const mobileNavRef = useRef(null);
   const headerRef = useRef(null);
   const handleMenuToggle = () => {
@@ -20,10 +21,20 @@ const Header = () => {
   };
   useEffect(() => {
     document.addEventListener("click", handleOutsideClick);
+    window.addEventListener("scroll", handleScroll);
     return () => {
       document.removeEventListener("click", handleOutsideClick);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [isMenuOpen]);
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 200) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
   return (
     <>
       <header className="desktop">
@@ -43,7 +54,10 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <header className="mobile" ref={headerRef}>
+      <header
+        className={`mobile ${isScrolled ? "scrolled" : ""}`}
+        ref={headerRef}
+      >
         <h1 className="pointer">
           <img src={logo} alt="Skilline" />
         </h1>

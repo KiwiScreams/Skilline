@@ -3,8 +3,17 @@ header
     width: 100%;
     align-items: center;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
     justify-content: space-between;
     padding: 60px 126px 0 100px;
+}
+header.scrolled
+{
+    background-color: blue;
 }
 header a
 {
@@ -152,4 +161,8 @@ header.mobile nav.closed
         display: flex;
         padding: 60px 8px 0 8px;
     }
+}
+p
+{
+    font-size: 50px;
 }
