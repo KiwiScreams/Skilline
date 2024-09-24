@@ -38,6 +38,11 @@
     border-radius: 80px;
     font-size: var(--font-size-24px);
     background-color: var(--orange--clr);
+    border: 3px solid var(--orange--clr);
+}
+.layout-section .text-container button.join:hover
+{
+    background-color: transparent;
 }
 .layout-section .btn-container
 {
@@ -61,6 +66,10 @@
     border-radius: 80px;
     font-size: var(--font-size-24px);
     background-color: transparent;
+}
+.layout-section .text-container button.pause:hover
+{
+    opacity: 0.8;
 }
 .layout-section .text-container p
 {
