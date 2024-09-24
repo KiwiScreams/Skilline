@@ -30,7 +30,7 @@ const Footer = () => {
     <>
       <footer>
         <div className="footer-top-container">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Skilline" />
           <div className="line"></div>
           <h4>
             Virtual Class

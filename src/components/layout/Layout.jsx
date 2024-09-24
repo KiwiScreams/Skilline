@@ -24,13 +24,13 @@ const Layout = () => {
           <div className="btn-container">
             <button className="join">Join for free</button>
             <button className="pause">
-              <img src={pauseImage} alt="" />
+              <img src={pauseImage} alt="Skilline" />
               Watch how it works
             </button>
           </div>
         </div>
         <div className="image-container">
-          <img src={girlImage} alt="" className="girl" />
+          <img src={girlImage} alt="Skilline" className="girl" />
           <img src={img1} alt="Skilline" className="img img0" />
           <img src={img2} alt="Skilline" className="img img1" />
           <img src={img3} alt="Skilline" className="img img2" />
