@@ -1,6 +1,7 @@
 import "./Header.css";
 import logo from "../../../assets/images/dark logo.svg";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 const Header = () => {
   return (
     <>
@@ -37,6 +38,11 @@ const Header = () => {
             </button>
           </div>
         </nav>
+        <div>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
       </header>
     </>
   );
