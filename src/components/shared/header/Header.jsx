@@ -15,6 +15,9 @@ const Header = () => {
       setIsMenuOpen(false);
     }
   };
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
   useEffect(() => {
     document.addEventListener("click", handleOutsideClick);
     return () => {
@@ -45,13 +48,23 @@ const Header = () => {
           <img src={logo} alt="Skilline" />
         </h1>
         <nav ref={mobileNavRef} className={`${isMenuOpen ? "open" : "closed"}`}>
-          <Link to="/">Home</Link>
-          <Link to="/">Careers</Link>
-          <Link to="/">Blog</Link>
-          <Link to="/">About Us</Link>
+          <Link to="/" onClick={handleLinkClick}>
+            Home
+          </Link>
+          <Link to="/" onClick={handleLinkClick}>
+            Careers
+          </Link>
+          <Link to="/" onClick={handleLinkClick}>
+            Blog
+          </Link>
+          <Link to="/" onClick={handleLinkClick}>
+            About Us
+          </Link>
           <div className="btn-container">
-            <button className="login btn">Login</button>
-            <button to="/" className="signup btn">
+            <button className="login btn" onClick={handleLinkClick}>
+              Login
+            </button>
+            <button to="/" className="signup btn" onClick={handleLinkClick}>
               Sign Us
             </button>
           </div>
