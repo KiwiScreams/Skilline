@@ -72,21 +72,14 @@ const Header = () => {
           <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} />
         </h1>
         <nav ref={mobileNavRef} className={`${isMenuOpen ? "open" : "closed"}`}>
-          <Link to="/" onClick={handleLinkClick}>
-            Home
-          </Link>
-          <Link to="/" onClick={handleLinkClick}>
-            Careers
-          </Link>
-          <Link to="/" onClick={handleLinkClick}>
-            Blog
-          </Link>
-          <Link to="/" onClick={handleLinkClick}>
-            About Us
-          </Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to} onClick={handleLinkClick}>
+              {item.label}
+            </Link>
+          ))}
           <div className="btn-container">
             <button className="login btn">Login</button>
-            <button to="/" className="signup btn" onClick={handleLinkClick}>
+            <button className="signup btn" onClick={handleLinkClick}>
               Sign Us
             </button>
           </div>
