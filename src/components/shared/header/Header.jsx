@@ -7,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const mobileNavRef = useRef(null);
+  const navigate = useNavigate();
   const headerRef = useRef(null);
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,15 +36,15 @@ const Header = () => {
       setIsScrolled(false);
     }
   };
-  const navigate = useNavigate();
   const handleNavigateToHomePage = () => {
     navigate("/");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
       <header className={`desktop ${isScrolled ? "scrolled" : ""}`}>
-        <h1 className="pointer" onClick={handleNavigateToHomePage}>
-          <img src={logo} alt="Skilline" />
+        <h1 className="pointer">
+          <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} />
         </h1>
         <nav>
           <Link to="/">Home</Link>
@@ -63,7 +64,7 @@ const Header = () => {
         ref={headerRef}
       >
         <h1 className="pointer">
-          <img src={logo} alt="Skilline" />
+          <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} />
         </h1>
         <nav ref={mobileNavRef} className={`${isMenuOpen ? "open" : "closed"}`}>
           <Link to="/" onClick={handleLinkClick}>
