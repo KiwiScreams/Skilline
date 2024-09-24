@@ -5,7 +5,12 @@ const Footer = () => {
     <>
       <footer>
         <div className="footer-top-container">
-hjkhjk
+          <img src={logo} alt="" />
+          <div className="line"></div>
+          <h4>
+            Virtual Class
+            <br /> for Zoom
+          </h4>
         </div>
         jkljkl
       </footer>
