@@ -15,7 +15,8 @@ const Footer = () => {
         <div className="footer-middle-container">
           <h4>Subscribe to get our Newsletter</h4>
           <div className="input-container">
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="Your Email"/>
+            <button>Subscribe</button>
           </div>
         </div>
       </footer>

@@ -26,3 +26,44 @@ footer .footer-top-container h4
     color: var(--white--clr);
     font-size: var(--font-size-22px);
 }
+footer .footer-middle-container
+{
+    margin-bottom: 95px;
+}
+footer .footer-middle-container h4
+{
+    color: var(--light-gray--clr);
+    font-size: var(--font-size-26px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer .input-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    gap: 20px;
+}
+footer .input-container input
+{
+    width: 400px;
+    height: 60px;
+    border: 1px solid var(--light-gray--clr);
+    font-size: var(--font-size-20px);
+    border-radius: 60px;
+    background-color: transparent;
+    padding-left: 30px;
+    color: var(--light-gray--clr);
+    font-size: var(--font-size-20px);
+}
+footer .input-container button
+{
+    color: var(--white--clr);
+    background: linear-gradient(to right, #545AE7, #393FCF);
+    font-size: var(--font-size-22px);
+    border-radius: 60px;
+    width: 180px;
+    height: 60px;
+}
