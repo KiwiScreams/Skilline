@@ -31,10 +31,10 @@ const Layout = () => {
         </div>
         <div className="image-container">
           <img src={girlImage} alt="" className="girl" />
-          <img src={img1} alt="" className="img img0" />
-          <img src={img2} alt="" className="img img1" />
-          <img src={img3} alt="" className="img img2" />
-          <img src={img4} alt="" className="img img3" />
+          <img src={img1} alt="Skilline" className="img img0" />
+          <img src={img2} alt="Skilline" className="img img1" />
+          <img src={img3} alt="Skilline" className="img img2" />
+          <img src={img4} alt="Skilline" className="img img3" />
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
