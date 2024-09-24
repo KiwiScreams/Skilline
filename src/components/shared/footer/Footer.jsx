@@ -32,6 +32,7 @@ const Footer = () => {
     navigate("/");
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  
   return (
     <>
       <footer>
