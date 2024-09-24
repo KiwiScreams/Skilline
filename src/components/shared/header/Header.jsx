@@ -61,9 +61,7 @@ const Header = () => {
             About Us
           </Link>
           <div className="btn-container">
-            <button className="login btn" onClick={handleLinkClick}>
-              Login
-            </button>
+            <button className="login btn">Login</button>
             <button to="/" className="signup btn" onClick={handleLinkClick}>
               Sign Us
             </button>
