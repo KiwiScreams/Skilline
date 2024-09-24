@@ -38,8 +38,14 @@ const Header = () => {
   };
   const handleNavigateToHomePage = () => {
     navigate("/");
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const navItems = [
+    { label: "Home", to: "/" },
+    { label: "Careers", to: "/" },
+    { label: "Blog", to: "/" },
+    { label: "About Us", to: "/" },
+  ];
   return (
     <>
       <header className={`desktop ${isScrolled ? "scrolled" : ""}`}>
@@ -47,15 +53,14 @@ const Header = () => {
           <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} />
         </h1>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/">Careers</Link>
-          <Link to="/">Blog</Link>
-          <Link to="/">About Us</Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to}>
+              {item.label}
+            </Link>
+          ))}
           <div className="btn-container">
             <button className="login btn">Login</button>
-            <button to="/" className="signup btn">
-              Sign Us
-            </button>
+            <button className="signup btn">Sign Up</button>
           </div>
         </nav>
       </header>
@@ -67,21 +72,14 @@ const Header = () => {
           <img src={logo} alt="Skilline" onClick={handleNavigateToHomePage} />
         </h1>
         <nav ref={mobileNavRef} className={`${isMenuOpen ? "open" : "closed"}`}>
-          <Link to="/" onClick={handleLinkClick}>
-            Home
-          </Link>
-          <Link to="/" onClick={handleLinkClick}>
-            Careers
-          </Link>
-          <Link to="/" onClick={handleLinkClick}>
-            Blog
-          </Link>
-          <Link to="/" onClick={handleLinkClick}>
-            About Us
-          </Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to} onClick={handleLinkClick}>
+              {item.label}
+            </Link>
+          ))}
           <div className="btn-container">
             <button className="login btn">Login</button>
-            <button to="/" className="signup btn" onClick={handleLinkClick}>
+            <button className="signup btn" onClick={handleLinkClick}>
               Sign Us
             </button>
           </div>
