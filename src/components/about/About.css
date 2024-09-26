@@ -198,3 +198,22 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 500px)
+{
+    .learn-more-container .cube
+    {
+        z-index: -1;
+        border-radius: 20px;
+        position: absolute;
+    }
+    .learn-more-container .cube.one
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .learn-more-container .cube.two
+    {
+        width: 130px;
+        height: 130px;
+    }
+}
