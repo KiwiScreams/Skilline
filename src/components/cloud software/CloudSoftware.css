@@ -1,0 +1,21 @@
+.software-section
+{
+    background-color: red;
+    width: 100%;
+}
+.software-section h3
+{
+    color: var(--dark-blue--clr);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: var(--font-size-36px);
+}
+.software-section p
+{
+    text-align: center;
+    color: var(--gray--clr);
+    font-size: var(--font-size-24px);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 103px;
+}
