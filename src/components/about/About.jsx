@@ -17,12 +17,16 @@ const About = () => {
         </p>
         <div className="about-infoes">
           <div className="about-info">
-            <h2>FOR INSTRUCTORS</h2>
-            <button>Start a class today</button>
+            <div>
+              <h2>FOR INSTRUCTORS</h2>
+              <button>Start a class today</button>
+            </div>
           </div>
           <div className="about-info">
-            <h2>FOR STUDENTS</h2>
-            <button>Enter access code</button>
+            <div>
+              <h2>FOR STUDENTS</h2>
+              <button>Enter access code</button>
+            </div>
           </div>
         </div>
       </section>
