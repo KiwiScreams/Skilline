@@ -24,6 +24,7 @@
     gap: 100px;
     margin: auto;
     width: fit-content;
+    margin-bottom: 160px;
 }
 .about-section .about-infoes .about-info
 {
@@ -70,4 +71,33 @@
 {
     background-color: #23bfeed6;
     border: 1px solid #23BDEE;
+}
+.about-section .learn-more-container
+{
+    display: flex;
+    margin: auto;
+    gap: 56px;
+    width: 70%;
+    align-items: center;
+}
+.about-section .learn-more-container h2
+{
+    font-size: var(--font-size-36px);
+    margin-bottom: 30px;
+    text-align: left;
+}
+.about-section .learn-more-container p
+{
+    font-size: var(--font-size-24px);
+    color: var(--gray--clr);
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+}
+.about-section .learn-more-container button
+{
+    text-decoration: underline;
+    background-color: transparent;
+    color: var(--gray--clr);
+    font-size: var(--font-size-22px);
 }

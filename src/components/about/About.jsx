@@ -1,7 +1,7 @@
 import "./About.css";
 import img1 from "../../assets/images/Rectangle19.png";
 import img2 from "../../assets/images/Rectangle21.png";
-
+import img3 from "../../assets/images/Group 5399.png";
 const About = () => {
   return (
     <>
@@ -27,6 +27,23 @@ const About = () => {
               <h2>FOR STUDENTS</h2>
               <button>Enter access code</button>
             </div>
+          </div>
+        </div>
+        <div className="learn-more-container">
+          <div>
+            <h2>
+              Everything you can do in a physical classroom,
+              <span className="orange-txt"> you can do with Skilline</span>
+            </h2>
+            <p>
+              Skilline's school management software helps traditional and online
+              schools manage scheduling, attendance, payments and virtual
+              classrooms all in one secure cloud-based system.
+            </p>
+            <button>Learn more</button>
+          </div>
+          <div>
+            <img src={img3} alt="" />
           </div>
         </div>
       </section>
