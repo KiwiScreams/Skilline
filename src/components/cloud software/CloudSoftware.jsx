@@ -34,30 +34,13 @@ const CloudSoftware = () => {
           tools needed to run a successful school or office.
         </p>
         <div className="boxes">
-          <div className="box">
-            <img src={img1} alt="" />
-            <h4>Online Billing, Invoicing, & Contracts</h4>
-            <p>
-              Simple and secure control of your organization's financial and
-              legal transactions. Send customized invoices and contracts
-            </p>
-          </div>
-          <div className="box">
-            <img src={img2} alt="" />
-            <h4>Easy Scheduling & Attendance Tracking</h4>
-            <p>
-              Schedule and reserve classrooms at one campus or multiple
-              campuses. Keep detailed records of student attendance
-            </p>
-          </div>
-          <div className="box">
-            <img src={img3} alt="" />
-            <h4>Customer Tracking</h4>
-            <p>
-              Automate and track emails to individuals or groups. Skilline's
-              built-in system helps organize your organization
-            </p>
-          </div>
+          {softwareInfo.map((info, index) => (
+            <div key={index} className="box">
+              <img src={info.img} alt="" />
+              <h4>{info.title}</h4>
+              <p>{info.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
