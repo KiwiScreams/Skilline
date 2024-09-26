@@ -1,4 +1,8 @@
 import "./CloudSoftware.css";
+import img1 from "../../assets/images/Group 5396.svg";
+import img2 from "../../assets/images/Group 5397.svg";
+import img3 from "../../assets/images/Group 5398.svg";
+
 const CloudSoftware = () => {
   return (
     <>
