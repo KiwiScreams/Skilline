@@ -83,3 +83,17 @@
     font-size: var(--font-size-40px);
     margin-bottom: 50px;
 }
+.features-section ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.features-section ul li
+{
+    display: flex;
+    gap: 42px;
+    align-items: center;
+    color: var(--gray--clr);
+    font-size: var(--font-size-22px);
+}
