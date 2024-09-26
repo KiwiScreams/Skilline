@@ -138,3 +138,25 @@
     bottom: 100px;
     right: -20px;
 }
+.learn-more-container .cube.one
+{
+    background-color: #23BDEE;
+    width: 138px;
+    height: 138px;
+    z-index: -1;
+    left: -20px;
+    top: -20px;
+    border-radius: 20px;
+    position: absolute;
+}
+.learn-more-container .cube.two
+{
+    background-color: #F4B767;
+    width: 230px;
+    height: 230px;
+    z-index: -1;
+    right: -20px;
+    bottom: -20px;
+    border-radius: 20px;
+    position: absolute;
+}
