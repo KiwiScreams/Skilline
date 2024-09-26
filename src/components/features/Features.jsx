@@ -1,8 +1,8 @@
 import "./Features.css";
 import img from "../../assets/images/Group 5404.png";
-import img1 from "../../assets/images/Group 5401";
-import img2 from "../../assets/images/Group 5402";
-import img3 from "../../assets/images/Group 5403";
+import img1 from "../../assets/images/Group 5401.png";
+import img2 from "../../assets/images/Group 5402.png";
+import img3 from "../../assets/images/Group 5403.png";
 
 const Features = () => {
   return (
@@ -24,7 +24,25 @@ const Features = () => {
             <img src={img} alt="Skilline" />
           </div>
           <div className="text">
-            <h2>A <span className="orange-txt">user interface</span> designed for the classroom</h2>
+            <h2>
+              A <span className="orange-txt">user interface</span> designed for
+              the classroom
+            </h2>
+            <ul>
+              <li>
+                <img src={img1} alt="" />
+                Teachers don't get lost in the grid view and have a dedicated
+                Podium space.
+              </li>
+              <li>
+                <img src={img2} alt="" />
+                TA's and presenters can be moved to the front of the class.
+              </li>
+              <li>
+                <img src={img3} alt="" />
+                Teachers can easily see all students and class data at one time.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
