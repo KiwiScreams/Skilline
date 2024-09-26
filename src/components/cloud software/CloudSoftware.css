@@ -1,7 +1,8 @@
 .software-section
 {
-    background-color: red;
-    width: 100%;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 158px;
 }
 .software-section h3
 {
@@ -18,4 +19,40 @@
     width: 50%;
     margin: auto;
     margin-bottom: 103px;
+}
+.software-section .boxes
+{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.software-section .boxes p
+{
+    width: 100%;
+    margin-bottom: 0;
+}
+.software-section .boxes .box
+{
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--shadow--clr);
+    padding: 50px;
+    padding-top: 122px;
+    width: 450px;
+    position: relative;
+}
+.software-section .boxes .box img
+{
+    position: absolute;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.software-section .boxes .box h4
+{
+    font-size: var(--font-size-30px);
+    color: var(--dark-blue--clr);
+    text-align: center;
+    margin-bottom: 24px;
 }
