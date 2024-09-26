@@ -1,0 +1,20 @@
+.about-section
+{
+    width: 100%;
+}
+.about-section h2
+{
+    font-size: var(--font-size-44px);
+    color: var(--dark-blue--clr);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-section p
+{
+    font-size: var(--font-size-24px);
+    color: var(--gray--clr);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}
