@@ -82,6 +82,7 @@
     color: var(--dark-blue--clr);
     font-size: var(--font-size-40px);
     margin-bottom: 50px;
+    text-align: center;
 }
 .features-section ul
 {
@@ -96,4 +97,24 @@
     align-items: center;
     color: var(--gray--clr);
     font-size: var(--font-size-22px);
+}
+@media screen and (max-width: 1150px)
+{
+    .features-section
+    {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 950px)
+{
+    .features-section .interface
+    {
+        flex-direction: column;
+        margin: auto;
+    }
+    .features-section .text,
+    .features-section .img
+    {
+        width: 100%;
+    }
 }
