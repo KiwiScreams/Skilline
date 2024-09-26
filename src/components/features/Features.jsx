@@ -30,16 +30,16 @@ const Features = () => {
             </h2>
             <ul>
               <li>
-                <img src={img1} alt="" />
+                <img src={img1} alt="Skilline" />
                 Teachers don't get lost in the grid view and have a dedicated
                 Podium space.
               </li>
               <li>
-                <img src={img2} alt="" />
+                <img src={img2} alt="Skilline" />
                 TA's and presenters can be moved to the front of the class.
               </li>
               <li>
-                <img src={img3} alt="" />
+                <img src={img3} alt="Skilline" />
                 Teachers can easily see all students and class data at one time.
               </li>
             </ul>
