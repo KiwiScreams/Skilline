@@ -161,6 +161,22 @@
     height: 230px;
     right: -20px;
     bottom: -20px;
+    animation: cubeAnim 1s infinite ease-in-out;
+}
+@keyframes cubeAnim
+{
+    0%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0.9;
+    }
+    100%
+    {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 1330px)
 {
