@@ -1,0 +1,68 @@
+.software-section
+{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 158px;
+}
+.software-section h3
+{
+    color: var(--dark-blue--clr);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: var(--font-size-36px);
+}
+.software-section p
+{
+    text-align: center;
+    color: var(--gray--clr);
+    font-size: var(--font-size-24px);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 103px;
+}
+.software-section .boxes
+{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.software-section .boxes p
+{
+    width: 100%;
+    margin-bottom: 0;
+    font-size: var(--font-size-20px);
+}
+.software-section .boxes .box
+{
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--shadow--clr);
+    padding: 50px;
+    padding-top: 122px;
+    width: 450px;
+    position: relative;
+    margin: auto;
+    height: 430px;
+}
+.software-section .boxes .box img
+{
+    position: absolute;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.software-section .boxes .box h4
+{
+    font-size: var(--font-size-30px);
+    color: var(--dark-blue--clr);
+    text-align: center;
+    margin-bottom: 24px;
+}
+@media screen and (max-width: 650px)
+{
+    .software-section .boxes .box
+    {
+        width: 90%;
+    }
+}
