@@ -1,0 +1,219 @@
+.about-section
+{
+    width: 100%;
+    margin-bottom: 180px;
+}
+.about-section h2
+{
+    font-size: var(--font-size-44px);
+    color: var(--dark-blue--clr);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-section p
+{
+    font-size: var(--font-size-24px);
+    color: var(--gray--clr);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.about-section .about-infoes
+{
+    display: flex;
+    gap: 100px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 160px;
+}
+.about-section .about-infoes .about-info
+{
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 20px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#171b4175, #171b4175), url('../../assets/images/Rectangle19.png');
+}
+.about-section .about-infoes .about-info:nth-child(2)
+{
+    background-image: linear-gradient(#171b4175, #171b4175), url('../../assets/images/Rectangle21.png');
+}
+.about-section .about-infoes .about-info h2
+{
+    font-size: var(--font-size-32px);
+    color: var(--white--clr);
+    margin-bottom: 17px;
+}
+.about-section .about-infoes .about-info button
+{
+    color: var(--white--clr);
+    font-size: var(--font-size-22px);
+    border-radius: 80px;
+    width: 284px;
+    height: 80px;
+    background-color: transparent;
+    border: 1px solid var(--white--clr);
+}
+.about-section .about-infoes .about-info:nth-child(1) button:hover
+{
+    background-color: var(--white--clr);
+    color: #23BDEE;
+}
+.about-section .about-infoes .about-info:nth-child(2) button:hover
+{
+    background-color: transparent;
+    color: #23BDEE;
+}
+.about-section .about-infoes .about-info:nth-child(2) button
+{
+    background-color: #23bfeed6;
+    border: 1px solid #23BDEE;
+}
+.about-section .learn-more-container
+{
+    display: flex;
+    margin: auto;
+    gap: 56px;
+    width: 80%;
+    align-items: center;
+}
+.about-section .learn-more-container .text,
+.about-section .learn-more-container .img-container
+{
+    position: relative;
+    height: fit-content;
+    width: 50%;
+}
+.learn-more-container img
+{
+    width: 100%;
+}
+.about-section .learn-more-container h2
+{
+    font-size: var(--font-size-36px);
+    margin-bottom: 30px;
+    text-align: left;
+}
+.about-section .learn-more-container p
+{
+    font-size: var(--font-size-24px);
+    color: var(--gray--clr);
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+}
+.about-section .learn-more-container button
+{
+    text-decoration: underline;
+    background-color: transparent;
+    color: var(--gray--clr);
+    font-size: var(--font-size-22px);
+}
+.about-section .learn-more-container button:hover
+{
+    text-decoration: none;
+}
+.learn-more-container .circle
+{
+    position: absolute;
+    background-color: #F4B767;
+    border-radius: 50%;
+    z-index: -1;
+}
+.learn-more-container .circle.one
+{
+    width: 73px;
+    height: 73px;
+    top: -25px;
+    left: -25px;
+}
+.learn-more-container .circle.two
+{
+    width: 30px;
+    height: 30px;
+    bottom: 100px;
+    right: -20px;
+}
+.learn-more-container .cube
+{
+    z-index: -1;
+    border-radius: 20px;
+    position: absolute;
+}
+.learn-more-container .cube.one
+{
+    background-color: #23BDEE;
+    width: 138px;
+    height: 138px;
+    left: -20px;
+    top: -20px;
+}
+.learn-more-container .cube.two
+{
+    background-color: #F4B767;
+    width: 230px;
+    height: 230px;
+    right: -20px;
+    bottom: -20px;
+}
+@media screen and (max-width: 1330px)
+{
+    .about-section p
+    {
+        width: 90%;
+    }
+    .about-section .about-infoes
+    {
+        display: flex;
+        gap: 50px;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 160px;
+        flex-direction: column;
+    }
+    .about-section .about-infoes .about-info
+    {
+        width: 90%;
+        margin: auto;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .about-section .learn-more-container .text,
+    .about-section .learn-more-container .img-container
+    {
+        width: 90%;
+    }
+    .about-section .learn-more-container
+    {
+        gap: 36px;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .learn-more-container .cube
+    {
+        z-index: -1;
+        border-radius: 20px;
+        position: absolute;
+    }
+    .learn-more-container .cube.one
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .learn-more-container .cube.two
+    {
+        width: 130px;
+        height: 130px;
+    }
+}
