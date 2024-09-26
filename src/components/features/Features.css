@@ -32,3 +32,11 @@
     height: 140px;
     left: 56px;
 }
+.features-section .circle.two
+{
+    background-color: #33D9EF;
+    top: -60px;
+    width: 30px;
+    height: 30px;
+    left: 223px;
+}
