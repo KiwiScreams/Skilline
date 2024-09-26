@@ -1,6 +1,7 @@
 .about-section
 {
     width: 100%;
+    margin-bottom: 180px;
 }
 .about-section h2
 {
@@ -77,8 +78,19 @@
     display: flex;
     margin: auto;
     gap: 56px;
-    width: 70%;
+    width: 80%;
     align-items: center;
+}
+.about-section .learn-more-container .text,
+.about-section .learn-more-container .img-container
+{
+    position: relative;
+    height: fit-content;
+    width: 50%;
+}
+.learn-more-container img
+{
+    width: 100%;
 }
 .about-section .learn-more-container h2
 {
@@ -100,4 +112,29 @@
     background-color: transparent;
     color: var(--gray--clr);
     font-size: var(--font-size-22px);
+}
+.about-section .learn-more-container button:hover
+{
+    text-decoration: none;
+}
+.learn-more-container .circle
+{
+    position: absolute;
+    background-color: #F4B767;
+    border-radius: 50%;
+    z-index: -1;
+}
+.learn-more-container .circle.one
+{
+    width: 73px;
+    height: 73px;
+    top: -25px;
+    left: -25px;
+}
+.learn-more-container .circle.two
+{
+    width: 30px;
+    height: 30px;
+    bottom: 100px;
+    right: -20px;
 }

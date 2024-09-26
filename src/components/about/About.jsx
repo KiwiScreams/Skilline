@@ -30,7 +30,9 @@ const About = () => {
           </div>
         </div>
         <div className="learn-more-container">
-          <div>
+          <div className="text">
+            <div className="circle one"></div>
+            <div className="circle two"></div>
             <h2>
               Everything you can do in a physical classroom,
               <span className="orange-txt"> you can do with Skilline</span>
@@ -42,7 +44,7 @@ const About = () => {
             </p>
             <button>Learn more</button>
           </div>
-          <div>
+          <div className="img-container">
             <img src={img3} alt="" />
           </div>
         </div>
