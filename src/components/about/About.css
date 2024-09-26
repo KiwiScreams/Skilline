@@ -56,6 +56,16 @@
     background-color: transparent;
     border: 1px solid var(--white--clr);
 }
+.about-section .about-infoes .about-info:nth-child(1) button:hover
+{
+    background-color: var(--white--clr);
+    color: #23BDEE;
+}
+.about-section .about-infoes .about-info:nth-child(2) button:hover
+{
+    background-color: transparent;
+    color: #23BDEE;
+}
 .about-section .about-infoes .about-info:nth-child(2) button
 {
     background-color: #23bfeed6;
