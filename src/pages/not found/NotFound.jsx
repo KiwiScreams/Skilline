@@ -11,7 +11,7 @@ const NotFound = () => {
     <>
       <section className="notfound-section">
         <div>
-          <img src={notFoundImage} alt="" />
+          <img src={notFoundImage} alt="not found image" />
           <h2>Oops!</h2>
           <p>
             It looks like the page you're looking for doesn't exist. It might

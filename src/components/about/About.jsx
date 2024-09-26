@@ -47,7 +47,7 @@ const About = () => {
           <div className="img-container">
             <div className="cube one"></div>
             <div className="cube two"></div>
-            <img src={img3} alt="" />
+            <img src={img3} alt="Skilline" />
           </div>
         </div>
       </section>
