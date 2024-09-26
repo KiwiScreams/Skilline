@@ -40,14 +40,6 @@
     height: 30px;
     left: 223px;
 }
-.features-section .circle.two
-{
-    background-color: #33D9EF;
-    top: -60px;
-    width: 30px;
-    height: 30px;
-    left: 223px;
-}
 .features-section .circle.three
 {
     background-color: #5B61EB;
@@ -55,4 +47,12 @@
     width: 124px;
     height: 124px;
     right: 50px;
+}
+.features-section .circle.four
+{
+    background-color: #F56666;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    right: 223px;
 }
