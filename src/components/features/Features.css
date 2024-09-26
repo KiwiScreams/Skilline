@@ -1,0 +1,34 @@
+.features-section
+{
+    width: 80%;
+    margin: auto;
+}
+.features-section .interface
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features-section .img
+{
+    width: 50%;
+    position: relative;
+}
+.features-section .img img
+{
+    width: 100%;
+}
+.features-section .circle
+{
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.features-section .circle.one
+{
+    background-color: #33EFA0;
+    top: -70px;
+    width: 140px;
+    height: 140px;
+    left: 56px;
+}
