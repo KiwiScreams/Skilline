@@ -1,5 +1,9 @@
 import "./Features.css";
 import img from "../../assets/images/Group 5404.png";
+import img1 from "../../assets/images/Group 5401";
+import img2 from "../../assets/images/Group 5402";
+import img3 from "../../assets/images/Group 5403";
+
 const Features = () => {
   return (
     <>
