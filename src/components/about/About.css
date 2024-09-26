@@ -29,16 +29,16 @@
 {
     width: 600px;
     height: 400px;
-    background: url(../../assets/images/Rectangle19.png);
     border-radius: 20px;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(#171b4175, #171b4175), url('../../assets/images/Rectangle19.png');
 }
 .about-section .about-infoes .about-info:nth-child(2)
 {
-    background: url(../../assets/images/Rectangle21.png);
+    background-image: linear-gradient(#171b4175, #171b4175), url('../../assets/images/Rectangle21.png');
 }
 .about-section .about-infoes .about-info h2
 {
