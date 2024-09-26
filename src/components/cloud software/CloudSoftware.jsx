@@ -36,7 +36,7 @@ const CloudSoftware = () => {
         <div className="boxes">
           {softwareInfo.map((info, index) => (
             <div key={index} className="box">
-              <img src={info.img} alt="" />
+              <img src={info.img} alt={info.title} />
               <h4>{info.title}</h4>
               <p>{info.description}</p>
             </div>
