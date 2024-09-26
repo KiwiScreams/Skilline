@@ -1,0 +1,128 @@
+.features-section
+{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 160px;
+}
+.features-section .interface
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features-section .img
+{
+    width: 50%;
+    position: relative;
+}
+.features-section .img img
+{
+    width: 100%;
+}
+.features-section .circle
+{
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.features-section .circle.one
+{
+    background-color: #33EFA0;
+    top: -70px;
+    width: 140px;
+    height: 140px;
+    left: 56px;
+    animation: moveAnim 0.5s infinite ease-in-out;
+}
+.features-section .circle.two
+{
+    background-color: #33D9EF;
+    top: -60px;
+    width: 30px;
+    height: 30px;
+    left: 223px;
+    animation: moveAnim 1.2s infinite ease-in-out;
+}
+.features-section .circle.three
+{
+    background-color: #5B61EB;
+    bottom: 10px;
+    width: 124px;
+    height: 124px;
+    right: 50px;
+    animation: moveAnim 0.8s infinite ease-in-out;
+}
+.features-section .circle.four
+{
+    background-color: #F56666;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    right: 223px;
+    animation: moveAnim 1s infinite ease-in-out;
+}
+.features-section h3
+{
+    font-size: var(--font-size-36px);
+    color: var(--dark-blue--clr);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.features-section p
+{
+    color: var(--gray--clr);
+    text-align: center;
+    margin-bottom: 100px;
+}
+.features-section .text
+{
+    width: 50%;
+}
+.features-section h2
+{
+    color: var(--dark-blue--clr);
+    font-size: var(--font-size-40px);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.features-section ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.features-section ul li
+{
+    display: flex;
+    gap: 42px;
+    align-items: center;
+    color: var(--gray--clr);
+    font-size: var(--font-size-22px);
+}
+@media screen and (max-width: 1150px)
+{
+    .features-section
+    {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 950px)
+{
+    .features-section .interface
+    {
+        flex-direction: column;
+        margin: auto;
+    }
+    .features-section .text,
+    .features-section .img
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .features-section ul li
+    {
+        gap: 10px;
+    }
+}
