@@ -1,4 +1,7 @@
 import "./About.css";
+import img1 from "../../assets/images/Rectangle 19.png";
+import img2 from "../../assets/images/Rectangle 21.png";
+
 const About = () => {
   return (
     <>
