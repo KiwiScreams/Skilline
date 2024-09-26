@@ -184,3 +184,17 @@
         height: 400px;
     }
 }
+@media screen and (max-width: 1000px)
+{
+    .about-section .learn-more-container .text,
+    .about-section .learn-more-container .img-container
+    {
+        width: 90%;
+    }
+    .about-section .learn-more-container
+    {
+        gap: 36px;
+        flex-direction: column;
+        width: 100%;
+    }
+}
