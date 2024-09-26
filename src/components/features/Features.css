@@ -2,6 +2,7 @@
 {
     width: 80%;
     margin: auto;
+    margin-bottom: 160px;
 }
 .features-section .interface
 {
@@ -116,5 +117,12 @@
     .features-section .img
     {
         width: 100%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .features-section ul li
+    {
+        gap: 10px;
     }
 }
