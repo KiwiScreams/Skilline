@@ -10,7 +10,7 @@ const Features = () => {
             <div className="circle two"></div>
             <div className="circle three"></div>
             <div className="circle four"></div>
-            <img src={img} alt="" />
+            <img src={img} alt="Skilline" />
           </div>
           <div className="text">
             <h2>lorem ipsum</h2>
