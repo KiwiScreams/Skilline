@@ -1,0 +1,99 @@
+.platform-section
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    margin-bottom: 170px;
+}
+.platform-section .image,
+.platform-section .text
+{
+    width: 50%;
+}
+.platform-section .image img
+{
+    width: 100%;
+}
+.platform-section .liner
+{
+    display: flex;
+    width: fit-content;
+    margin-bottom: 34px;
+    gap: 30px;
+    align-items: center;
+}
+.platform-section .liner .line
+{
+    height: 1px;
+    width: 80px;
+    background-color: #525596;
+}
+.platform-section .liner span
+{
+    color: #525596;
+    font-size: var(--font-size-20px);
+}
+.platform-section h3
+{
+    font-size: var(--font-size-36px);
+    margin-bottom: 30px;
+    color: var(--dark-blue--clr);
+}
+.platform-section p
+{
+    font-size: var(--font-size-24px);
+    margin-bottom: 30px;
+    color: var(--gray--clr);
+}
+.platform-section button
+{
+    width: 280px;
+    height: 80px;
+    border-radius: 80px;
+    border: 3px solid var(--orange--clr);
+    color: var(--orange--clr);
+    font-size: var(--font-size-24px);
+    background-color: transparent;
+    margin-top: 44px;
+}
+.platform-section button:hover
+{
+    background-color: var(--orange--clr);
+    color: var(--white--clr);
+}
+@media screen and (max-width: 1150px)
+{
+    .platform-section
+    {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 950px)
+{
+    .platform-section
+    {
+        flex-direction: column;
+        margin: auto;
+        gap: 20px;
+    }
+    .platform-section .text,
+    .platform-section .img
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .platform-section
+    {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .platform-section .text,
+    .platform-section .image
+    {
+        width: 90%;
+    }
+}
