@@ -14,6 +14,7 @@ const Platforms = () => {
           </div>
           <h3>200+ educational tools and platform <span className="orange-txt">integrations</span></h3>
           <p>Schoology has every tool your classroom needs and comes pre-integrated with more than 200+ tools, student information systems (SIS), and education platforms.</p>
+          <button>See All Integrations</button>
         </div>
       </section>
     </>

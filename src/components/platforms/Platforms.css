@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     gap: 300px;
+    margin-bottom: 170px;
 }
 .platform-section .image,
 .platform-section .text
@@ -45,4 +46,20 @@
     font-size: var(--font-size-24px);
     margin-bottom: 30px;
     color: var(--gray--clr);
+}
+.platform-section button
+{
+    width: 280px;
+    height: 80px;
+    border-radius: 80px;
+    border: 3px solid var(--orange--clr);
+    color: var(--orange--clr);
+    font-size: var(--font-size-24px);
+    background-color: transparent;
+    margin-top: 44px;
+}
+.platform-section button:hover
+{
+    background-color: var(--orange--clr);
+    color: var(--white--clr);
 }
