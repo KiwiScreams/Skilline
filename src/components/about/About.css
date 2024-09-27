@@ -40,9 +40,17 @@
     align-items: center;
     background-image: linear-gradient(#171b4175, #171b4175), url('../../assets/images/Rectangle19.png');
 }
+.about-section .about-infoes .about-info:hover
+{
+    background-image: linear-gradient(#171b4100, #171b4100), url('../../assets/images/Rectangle19.png');
+}
 .about-section .about-infoes .about-info:nth-child(2)
 {
     background-image: linear-gradient(#171b4175, #171b4175), url('../../assets/images/Rectangle21.png');
+}
+.about-section .about-infoes .about-info:nth-child(2):hover
+{
+    background-image: linear-gradient(#171b4100, #171b4100), url('../../assets/images/Rectangle21.png');
 }
 .about-section .about-infoes .about-info h2
 {
