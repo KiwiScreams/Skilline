@@ -36,6 +36,20 @@ const Features = () => {
       orangeText: "Tests",
     },
   ];
+  const listItems = [
+    {
+      img: img1,
+      text: "Teachers don't get lost in the grid view and have a dedicated Podium space.",
+    },
+    {
+      img: img2,
+      text: "TA's and presenters can be moved to the front of the class.",
+    },
+    {
+      img: img3,
+      text: "Teachers can easily see all students and class data at one time.",
+    },
+  ];
   return (
     <>
       <section className="features-section">
