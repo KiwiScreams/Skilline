@@ -63,3 +63,37 @@
     background-color: var(--orange--clr);
     color: var(--white--clr);
 }
+@media screen and (max-width: 1150px)
+{
+    .platform-section
+    {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 950px)
+{
+    .platform-section
+    {
+        flex-direction: column;
+        margin: auto;
+        gap: 20px;
+    }
+    .platform-section .text,
+    .platform-section .img
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .platform-section
+    {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .platform-section .text,
+    .platform-section .image
+    {
+        width: 90%;
+    }
+}
