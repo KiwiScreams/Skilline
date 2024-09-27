@@ -3,6 +3,12 @@ import img from "../../assets/images/Group 5404.png";
 import img1 from "../../assets/images/Group 5401.png";
 import img2 from "../../assets/images/Group 5402.png";
 import img3 from "../../assets/images/Group 5403.png";
+
+import img4 from "../../assets/images/Group 122.png";
+import img5 from "../../assets/images/Group 92.png";
+import img6 from "../../assets/images/Group 124.png";
+import img7 from "../../assets/images/Group 106.png";
+
 const Features = () => {
   const data = [
     {
