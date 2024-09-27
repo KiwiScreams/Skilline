@@ -15,11 +15,13 @@ header.desktop.scrolled
 {
   background-color: var(--white--clr);
   padding-top: 10px;
+  box-shadow: 0 0 10px var(--shadow--clr);
 }
 header.mobile.scrolled
 {
-  padding-top: 10px;
+  padding-top: 0px;
   background-color: var(--white--clr);
+  box-shadow: 0 0 10px var(--shadow--clr);
 }
 header a
 {
