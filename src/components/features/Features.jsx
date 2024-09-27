@@ -4,6 +4,32 @@ import img1 from "../../assets/images/Group 5401.png";
 import img2 from "../../assets/images/Group 5402.png";
 import img3 from "../../assets/images/Group 5403.png";
 const Features = () => {
+  const data = [
+    {
+      title: "Tools For Teachers And Learners",
+      text: "Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.",
+      image: img1,
+      orangeText: "Tools",
+    },
+    {
+      title: "Assessments, Quizzes, Tests",
+      text: "Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.",
+      image: img2,
+      orangeText: "Quizzes, Tests",
+    },
+    {
+      title: "Class Management Tools for Educators",
+      text: "Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.",
+      image: img1,
+      orangeText: "Class Management",
+    },
+    {
+      title: "One-on-One Discussions Tests",
+      text: "Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.",
+      image: img3,
+      orangeText: "Tests",
+    },
+  ];
   return (
     <>
       <section className="features-section">
