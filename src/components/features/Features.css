@@ -133,6 +133,11 @@
     margin: auto;
     margin-top: 150px;
 }
+.features-section .see-more:hover
+{
+    background-color: var(--orange--clr);
+    color: var(--white--clr);
+}
 @media screen and (max-width: 1150px)
 {
     .features-section
