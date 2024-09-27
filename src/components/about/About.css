@@ -1,7 +1,7 @@
 .about-section
 {
     width: 100%;
-    margin-bottom: 180px;
+    margin-bottom: 160px;
 }
 .about-section h2
 {
@@ -66,7 +66,7 @@
     width: 284px;
     height: 80px;
     background-color: transparent;
-    border: 1px solid var(--white--clr);
+    border: 3px solid var(--white--clr);
 }
 .about-section .about-infoes .about-info:nth-child(1) button:hover
 {
@@ -81,7 +81,7 @@
 .about-section .about-infoes .about-info:nth-child(2) button
 {
     background-color: #23bfeed6;
-    border: 1px solid #23BDEE;
+    border: 3px solid #23BDEE;
 }
 .about-section .learn-more-container
 {
