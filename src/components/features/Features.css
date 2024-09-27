@@ -99,6 +99,45 @@
     color: var(--gray--clr);
     font-size: var(--font-size-22px);
 }
+.features-section .container
+{
+    display: flex;
+    align-items: center;
+    gap: 230px;
+}
+.features-section .container h2,
+.features-section .container p
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.features-section .container .text,
+.features-section .container .image
+{
+    width: 50%;
+}
+.features-section .container .image img
+{
+    width: 100%;
+}
+.features-section .see-more
+{
+    width: 280px;
+    height: 80px;
+    border-radius: 80px;
+    border: 3px solid var(--orange--clr);
+    color: var(--orange--clr);
+    font-size: var(--font-size-24px);
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+}
+.features-section .see-more:hover
+{
+    background-color: var(--orange--clr);
+    color: var(--white--clr);
+}
 @media screen and (max-width: 1150px)
 {
     .features-section
@@ -117,6 +156,27 @@
     .features-section .img
     {
         width: 100%;
+    }
+    .features-section .container
+    {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .features-section .container
+    {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .features-section .container .text,
+    .features-section .container .image
+    {
+        width: 90%;
+    }
+    .features-section .container.reverse
+    {
+        flex-direction: column-reverse;
     }
 }
 @media screen and (max-width: 600px)
