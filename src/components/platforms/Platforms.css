@@ -1,0 +1,48 @@
+.platform-section
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+.platform-section .image,
+.platform-section .text
+{
+    width: 50%;
+}
+.platform-section .image img
+{
+    width: 100%;
+}
+.platform-section .liner
+{
+    display: flex;
+    width: fit-content;
+    margin-bottom: 34px;
+    gap: 30px;
+    align-items: center;
+}
+.platform-section .liner .line
+{
+    height: 1px;
+    width: 80px;
+    background-color: #525596;
+}
+.platform-section .liner span
+{
+    color: #525596;
+    font-size: var(--font-size-20px);
+}
+.platform-section h3
+{
+    font-size: var(--font-size-36px);
+    margin-bottom: 30px;
+    color: var(--dark-blue--clr);
+}
+.platform-section p
+{
+    font-size: var(--font-size-24px);
+    margin-bottom: 30px;
+    color: var(--gray--clr);
+}

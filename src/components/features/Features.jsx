@@ -93,19 +93,19 @@ const Features = () => {
                   <>
                     <div className="text">
                       <h2>
-                        <span className="orange-txt">{item.orangeText}</span>{" "}
+                        <span className="orange-txt">{item.orangeText}</span>
                         {item.title.replace(item.orangeText, "")}
                       </h2>
                       <p>{item.text}</p>
                     </div>
                     <div className="image">
-                      <img src={item.image} alt="" />
+                      <img src={item.image} alt={item.title} />
                     </div>
                   </>
                 ) : (
                   <>
                     <div className="image">
-                      <img src={item.image} alt="" />
+                      <img src={item.image} alt={item.title} />
                     </div>
                     <div className="text">
                       <h2>
