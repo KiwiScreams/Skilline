@@ -99,6 +99,29 @@
     color: var(--gray--clr);
     font-size: var(--font-size-22px);
 }
+.features-section .container
+{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    gap: 230px;
+    justify-content: space-between;
+}
+.features-section .container h2,
+.features-section .container p
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.features-section .container .text,
+.features-section .container .image
+{
+    width: 50%;
+}
+.features-section .container .image img
+{
+    width: 100%;
+}
 @media screen and (max-width: 1150px)
 {
     .features-section
