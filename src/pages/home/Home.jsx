@@ -3,6 +3,7 @@ import CloudSoftware from "../../components/cloud software/CloudSoftware";
 import Companies from "../../components/companies/Companies";
 import Features from "../../components/features/Features";
 import Layout from "../../components/layout/Layout";
+import News from "../../components/news/News";
 import Platforms from "../../components/platforms/Platforms";
 import "./Home.css";
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <Features />
       <Platforms />
+      <News />
     </>
   );
 };
