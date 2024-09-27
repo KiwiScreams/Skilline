@@ -120,6 +120,19 @@
 {
     width: 100%;
 }
+.features-section .see-more
+{
+    width: 280px;
+    height: 80px;
+    border-radius: 80px;
+    border: 3px solid var(--orange--clr);
+    color: var(--orange--clr);
+    font-size: var(--font-size-24px);
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+}
 @media screen and (max-width: 1150px)
 {
     .features-section

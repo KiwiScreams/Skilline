@@ -120,6 +120,7 @@ const Features = () => {
             ))}
           </div>
         </div>
+        <button className="see-more">See more features</button>
       </section>
     </>
   );
