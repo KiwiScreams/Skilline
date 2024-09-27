@@ -16,6 +16,7 @@ const Features = () => {
       text: "Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.",
       image: img4,
       orangeText: "Tools",
+      classname: "reverse",
     },
     {
       title: "Assessments, Quizzes, Tests",
@@ -28,6 +29,7 @@ const Features = () => {
       text: "Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.",
       image: img6,
       orangeText: "Class Management",
+      classname: "reverse",
     },
     {
       title: "One-on-One Discussions Tests",
@@ -75,26 +77,18 @@ const Features = () => {
                 for the classroom
               </h2>
               <ul>
-                <li>
-                  <img src={img1} alt="Skilline" />
-                  Teachers don't get lost in the grid view and have a dedicated
-                  Podium space.
-                </li>
-                <li>
-                  <img src={img2} alt="Skilline" />
-                  TA's and presenters can be moved to the front of the class.
-                </li>
-                <li>
-                  <img src={img3} alt="Skilline" />
-                  Teachers can easily see all students and class data at one
-                  time.
-                </li>
+                {listItems.map((item, index) => (
+                  <li key={index}>
+                    <img src={item.img} alt="Skilline" />
+                    {item.text}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
           <div>
             {data.map((item, index) => (
-              <div key={index} className="container">
+              <div key={index} className={`container ${item?.classname}`}>
                 {index % 2 === 0 ? (
                   <>
                     <div className="text">

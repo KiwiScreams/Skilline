@@ -101,11 +101,9 @@
 }
 .features-section .container
 {
-    background-color: blue;
     display: flex;
     align-items: center;
     gap: 230px;
-    justify-content: space-between;
 }
 .features-section .container h2,
 .features-section .container p
@@ -140,6 +138,27 @@
     .features-section .img
     {
         width: 100%;
+    }
+    .features-section .container
+    {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .features-section .container
+    {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .features-section .container .text,
+    .features-section .container .image
+    {
+        width: 90%;
+    }
+    .features-section .container.reverse
+    {
+        flex-direction: column-reverse;
     }
 }
 @media screen and (max-width: 600px)
