@@ -63,6 +63,51 @@ const Features = () => {
               <img src={img1} alt="" />
             </div>
           </div>
+          <div className="container">
+            <div className="image">
+              <img src={img2} alt="" />
+            </div>
+            <div className="text">
+              <h2>
+                Assessments, <span className="orange-txt">Quizzes, Tests</span>
+              </h2>
+              <p>
+                Easily launch live assignments, quizzes, and tests. Student
+                results are automatically entered in the online gradebook.
+              </p>
+            </div>
+          </div>
+          <div className="container">
+            <div className="text">
+              <h2>
+                <span className="orange-txt">Class Management</span> Tools for
+                Educators
+              </h2>
+              <p>
+                Class provides tools to help run and manage the class such as
+                Class Roster, Attendance, and more. With the Gradebook, teachers
+                can review and grade tests and quizzes in real-time.
+              </p>
+            </div>
+
+            <div className="image">
+              <img src={img1} alt="" />
+            </div>
+          </div>
+          <div className="container">
+            <div className="image">
+              <img src={img3} alt="" />
+            </div>
+            <div className="text">
+              <h2>
+                One-on-One Discussions <span className="orange-txt">Tests</span>
+              </h2>
+              <p>
+                Teachers and teacher assistants can talk with students privately
+                without leaving the Zoom environment.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>
